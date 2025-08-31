@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFAM - CBDA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+  <!-- Header with 2 figures + centered title -->
+  <nav class="navbar is-light" style="display: grid; grid-template-columns: 1fr 2fr 1fr; 
+  align-items: center; padding: 1rem 2rem;">
+    <div class="navbar-brand">
+      <figure class="image is-128x128">
+        <img src="./images/ifam.png">
+      </figure>
+    </div>
+    <div class="navbar-item has-text-centered">
+      <h1 class="title is-3">Instituto Federal de Educação, Ciência e 
+        Tecnologia do Amazonas <br> Campus Avançado de Boca do Acre <br>
+        Algoritmo e Lógica de Programação <br></h1>
+    </div>
+    <div class="navbar-end">
+      <figure class="image is-128x128 mr-4">
+        <img class="is-rounded" src="./images/ifam.png">
+      </figure>
+    </div>
+  </nav>
+
+  <!-- Radio buttons for algorithms -->
+  <section class="section">
+    <div class="box">
+      <h2 class="subtitle">Selecione um algoritmo/exercício</h2>
+      <label class="radio block">
+        <input type="radio" name="algorithm" value="exercise0" > Atividade 0
+      </label>
+      <label class="radio block">
+        <input type="radio" name="algorithm" value="exercise1"> Atividade 1
+      </label>
+      <label class="radio block">
+        <input type="radio" name="algorithm" value="exercise2"> Atividade 2
+      </label>
+      <!-- Add more options here -->
+    </div>
+  </section>
+
+  <!-- Execute button -->
+  <div class="has-text-centered">
+    <button id="executeBtn" class="button is-primary is-medium">Tarãããããããããããã</button>
+  </div>
+
+    <script src='AlgorithmLoader.js'></script>
+
+<!-- Add these AFTER your execute button -->
+<div id="loading" class="has-text-centered" style="display: none;">
+    <button class="button is-loading is-primary is-medium">Carregando...</button>
+</div>
+
+<div id="results" class="box" style="display: none;">
+    <h3 class="title is-5">Resultado:</h3>
+    <div id="output" class="content"></div>
+</div>
+</body>
+</html>
